@@ -1,0 +1,62 @@
+#introduction
+Text:Hi,I am virtual assistant Siri.I am here to help you to find the best insurance policy as your goals.
+Response:Hi,hello
+Text:May I know your good name?
+Response:I am {name}
+Text:What is your age?
+Response:I am {integer less than 100}
+Text:Can I get your E-mail-Id?
+Response: {aryan@gmail.com}
+Text:OK! That's great.Now let's get started.
+We provide three kind of policy of insurance given below:
+1)Term life insurance
+2)Health life insuarnce
+3)Retirement life insurance
+From the given options which you would like to know more about it? 
+Response: {Life insurance / Health insurance / Property insurance}
+
+#Life insurance
+Text:Are you NRI or Indian?
+Response:{NRI/Indian}
+Text:What is your annual income?
+Response:rs.{integer}
+Text:Are you salaried or self-employeed?
+Response:{salaried/self-employeed}
+Text:Do you smoke?
+Response:{Yes/no}
+Text:what is your education qualification?
+Response:{name of degree}
+Text:Do you suffer from any kind of medical condition (eg. diabetes,blood pressure)?if yes,then which?
+Response:{yes,no}{diabetes,}
+Response:Based on your Responses,I recommend you C2 Jeevan bema insurance plan. To get more information about the premium, sum assured and other benefit please contact our agent
+
+#Health insurance
+Text:Do you smoke or consume alchohol?
+Response:{Yes/no} 
+Text:what kind of profession do you follow?
+Response:{profession}
+Text:what is weight(in kgs) and height(in cms)?
+Response:{integer}kgs and {float}cms
+Text:Do you have any kind of disability?
+Response:{Yes/no}
+Text:Do you suffer from any kind of major disease (eg. blood pressure,diabetes,cancer etc.) if yes,then which?
+Response:{Yes/no}{diabetes,blood pressure}
+Text:Does any one your family have or had the previously asked diseases? if yes,then which?
+Response:{Yes/no}{diabetes,blood pressure}
+Response:Based on your Responses,I recommend you c2 health benefit rider insurance plan. To get more information about the premium, sum assured and other benefit please contact our agent
+
+#Property insurance
+Text:what kind of profession do you follow?
+Response:{profession}
+Text:What is your annual income?
+Response:rs.{integer}
+Text:What location are you targetting?
+Response:{location}
+Text:Are you NRI or Indian?
+Response:{NRI/Indian}
+Response:Based on your Responses,I recommend you a home insurance plan for {location}. To get more information about the premium, sum assured and other benefit please contact our agent 
+
+#thankyou
+Response:Are you satisfied with this recomendation?
+text:{yes/no}
+Response:thank you for your time! See you again.

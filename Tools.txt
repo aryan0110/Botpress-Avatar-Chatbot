@@ -1,0 +1,12 @@
+1. Googletrans Python library(For translating from custom set language to English for backend)
+2. Botlibre (To Integrate Avatar and Text-To-Speech in all languages)
+3. Flask Python Framework(Framework for the Python backend for the chatbot and the central point to integrate any other feature for the chatbot)
+4. HTTP requests Python library (To send requests to the Chatbot backend from Python and recieve its response)
+5. Botpress (Used to program the conversational flow, questions, responses and validations of the entire chatbot. All logic for the chattree is done on Botpress)
+6. HTML, CSS and JS (With JQuery) (For web-based development for the UI of the chatbot and to connect the interface with the python backend)
+7. **Only the interface for the chatbot, i.e., the layout of the message container and logic for the form-based user input is derived from an open-source github project
+8: speech2text.js: Speech Recognition to capture client microphone and recognise text in the set language
+9. Other Python Libraries:
+- json (To store and operate on Chatbot responses)
+- re (For validation)
+- io (Part of Speech Recognition)

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Julie the Chatbot</title> <!-- Webpage Title -->
+  <link rel = "icon" href = "https://www.botlibre.com/avatars/a12546666.png" type = "image/x-icon"> <!-- Title Image as avatar image -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="#" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Custom Font Integration -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- To use JQuery -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!-- To use Bootstrap (javascript) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- To use Bootstrap (css) -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- To include processing animation when bot message is processing (div class="dot-elastic") -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel= "stylesheet" href= "/static/particles/css/particles.css"> <!-- For Disintegration animation for buttons with bot message (css) -->
+<link rel= "stylesheet" href= "/static/style.css"> <!-- Including our css styling file -->
+</head>
+
+<body>
+
+<script type='text/javascript' src="https://www.botlibre.com/scripts/sdk.js"></script> <!-- Including Botlibre Avatar SDK -->
+
+<!-- Avatar elements start here (Included to add custom styling from our end) -->
+<div id="avatar-avatarbox" class="avatar-avatarbox">
+    <div id="avatar-avatar-image-div" style="display:none;width:500px;height:600px;">
+      <img id="avatar-avatar" style="width:500px;height:600px;"></div><div id="avatar-avatar-video-div" style="display: inline-block; width: 500px; height: 600px; background-size: 500px 600px; background-repeat: no-repeat; background-image: url(&quot;https://www.botlibre.com/media/a12546662-0.png&quot;); position: fixed; opacity: 0; z-index: -1;">
+        <video muted="true" id="avatar-avatar-video" autoplay="" preload="auto" style="background:transparent;width:500px;height:600px;" src="https://www.botlibre.com/media/a32491060--7629043515013426890.webm">Video format not supported by your browser (try Chrome)</video>
+      </div>
+        <div id="avatar-avatar-canvas-div" style="display: inline-block; width: 500px; height: 600px;">
+          <canvas id="avatar-avatar-canvas" style="background:transparent;width:500px;height:600px;" width="500" height="600">Canvas not supported by your browser (try Chrome)</canvas></div>
+        </div>  
+<!-- Avatar elements end -->
+
+<!-- Chatbot Widget Elements -->
+  <section class="msger"> <!-- Entire Widget section -->
+
+    <header class="msger-header"> <!-- Widget header containing title and dropdown -->
+      <div class="msger-header-title"> <!-- Widget Title -->
+        </i><b>Julie: The Insurance Chatbot</b></i>
+      </div>
+      <div class="dropdown" style="float:right;position:relative; bottom:40px;"> <!-- Dropdown for Language toggle and Clear button -->
+        <button id="menuBtn" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="float: right;"> <!-- Button to toggle dropdown -->
+        <i class="fa fa-bars"></i></button> <!-- Menu Icon for Button -->
+        <ul class="dropdown-menu pull-right"> <!-- List of dropdown options -->
+          <li><a class="msger-lang-btn" id="langBtn">Language: English</a></li> <!-- Language Toggle option -->
+          <li><a class="msger-clear-btn" id="clearBtn">Clear Chat</a></li> <!-- Clear Chat option -->
+        </ul>
+      </div>
+    </header>
+
+    <main class="msger-chat"> <!-- Chat-Area to display all bot and user messages generated -->
+
+    </main>
+
+    <form class="msger-inputarea" autocomplete="off" id="chatform"> <!-- Chatbot form and form elements -->
+      <div class="msger-input">
+      <input type="text" id="textInput" placeholder="Speak/Type your message..."> <!-- Textbox used to send user messages -->
+      <button type="submit" id="sendBtn"><i class="material-icons">send</i></button> <!-- Submit button with send icon -->
+      </div>
+      <input type="image" src="https://img.icons8.com/ios/452/microphone.png" class="msger-speak-btn" id="recordButton"> <!-- Speech Recognition Record Button -->
+    </form>
+
+  </section>
+  <!-- Chatbot Widget Elements end -->
+
+  <div class="chat-bot-icon"> <!-- Chatbot Toggle Button (From w3) -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square animate"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x "><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  </div>
+
+</body>
+
+<script src="/static/particles/js/anime.min.js"></script> <!-- For Disintegration animation for buttons with bot message (javascript) -->
+<script src="/static/particles/js/particles.js"></script> <!-- For Disintegration animation for buttons with bot message (javascript) -->
+<script src="/static/script.js"></script> <!-- Including javascript file for all code of chatbot widget elements -->
+<script src="/static/speech2text.js"></script> <!-- Including javascript file for all code for speech recognition -->
+</html>
